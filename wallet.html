@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="wallet.css">
+</head>
+<body>
+    <h1>WALLET</h1>
+    <div class="wallet-section">
+        <p>Balance: $<span id="balance">110.00</span></p>
+        <input type="number" id="amountInput" placeholder="Enter Amount" />
+        <div class="amount-section">
+            <button class="button" onclick="addFunds()">Add Funds</button>
+            <button class="button" onclick="withdrawFunds()">Withdraw Funds</button>
+        </div>
+        <div class="card">
+            <p>Cashback</p>
+            <p>$<span id="cashback">10.00</span></p>
+        </div>
+        <div class="card">
+            <p>Amount</p>
+            <p>$<span id="amount">100.00</span></p>
+        </div>
+    </div>
+
+    <h2>All Borrows</h2>
+    <div class="borrow-section">
+        <div class="card borrow-card">
+            <div>
+                <p>$299.00</p>
+                <p>1.5 GB per day</p>
+                <p>Transaction ID</p>
+            </div>
+            <button class="button" onclick="repay()">Repay</button>
+        </div>
+    </div>
+    <script src="wallet.js"></script>
+</body>
+</html>

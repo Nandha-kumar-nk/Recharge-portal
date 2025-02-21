@@ -1,0 +1,58 @@
+body{
+    margin: 0%;
+    font-family: sans-serif;
+}
+header{
+    background-color: rgb(218, 227, 236);
+    padding: 10px;
+    box-shadow: 1px 1px 15px #333;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin:0px;
+}
+.nav-logo{
+    margin-right: auto;
+    list-style: none;
+}
+.nav-link{
+list-style: none;
+justify-content: space-around;
+}
+.nav-link>a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+.logo{
+    height: 40%;
+    width: 40px;
+    clip-path: circle();
+    border:2px solid red;
+    border-radius: 50%;
+
+
+}
+/*---------- small devices 360 to 480
+tablet and laptop 760 to 1024
+
+------------------------------------------------------media queries
+ *---------------------------------------------------------------*/
+@media screen and (max-width: 760){
+  .container{
+    flex-direction: row;
+  }
+  .nav-logo{
+    margin-right: 0;
+    
+}
+  .nav-link{
+    padding: 10px;
+
+  }
+}
